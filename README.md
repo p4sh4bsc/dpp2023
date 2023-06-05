@@ -24,8 +24,8 @@
 * nano ./.ros_params
 
 <h5> machine_ip=$(hostname  -I | cut -f1 -d' ') </h5>
-* export ROS_HOSTNAME=localhost
-* export ROS_IP=localhost
-* export ROS_MASTER_URI=http://localhost:11311
-* export ROVER_MODEL=brover
-* export ROVER_WHEEL_PARAM=12280
+<h5> export ROS_HOSTNAME=localhost </h5>
+<h5> export ROS_IP=localhost </h5>
+<h5> export ROS_MASTER_URI=http://localhost:11311 </h5>
+<h5> export ROVER_MODEL=brover </h5>
+<h5> export ROVER_WHEEL_PARAM=12280 </h5>
