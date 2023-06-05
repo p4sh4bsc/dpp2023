@@ -20,9 +20,10 @@
 
 
 <h2> Настроить ros_master_uri </h2>
+
 * nano ./.ros_params
 
-* machine_ip=$(hostname  -I | cut -f1 -d' ')
+<h3> machine_ip=$(hostname  -I | cut -f1 -d' ') </h3>
 * export ROS_HOSTNAME=localhost
 * export ROS_IP=localhost
 * export ROS_MASTER_URI=http://localhost:11311
