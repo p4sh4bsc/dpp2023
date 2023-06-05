@@ -23,7 +23,7 @@
 
 * nano ./.ros_params
 
-<h3> machine_ip=$(hostname  -I | cut -f1 -d' ') </h3>
+<h5> machine_ip=$(hostname  -I | cut -f1 -d' ') </h5>
 * export ROS_HOSTNAME=localhost
 * export ROS_IP=localhost
 * export ROS_MASTER_URI=http://localhost:11311
