@@ -1,0 +1,30 @@
+<launch>
+
+    <arg name="run_rosserial" default="true"/>
+    <arg name="run_rplidar" default="false"/>
+    <arg name="run_turtlebro_web" default="false"/>
+    <arg name="run_camera_ros" default="true"/>
+
+    <arg name="run_simple_odom" default="true"/>
+   
+    <arg name="run_main_package" default="true"/> 
+
+
+    <node pkg="rosserial_arduino" type="serial_node.py" name="ArduinoSer" output="screen">
+          <param name="port" value="/dev/ttyUSB1"/>
+          <param name="baud" value="57600"/>
+    </node>
+   
+    <include file="$(find turtlebro)/launch/rosserial.launch" if="$(arg run_rosserial)"/>
+    <include file="$(find turtlebro)/launch/robot_model.launch"/>
+
+    <include file="$(find turtlebro)/launch/camera_ros.launch" if="$(arg run_camera_ros)"/>
+
+    <include file="$(find turtlebro)/launch/rplidar.launch" if="$(arg run_rplidar)"/>
+
+    <include file="$(find turtlebro_web)/launch/turtlebro_web.launch" if="$(arg run_turtlebro_web)"/>
+
+    <include file="$(find turtlebro)/launch/simple_odom.launch" if="$(arg run_simple_odom)"/>
+
+    <include file="/home/pi/catkin_ws/src/main_package/launch/main.launch" if="$(arg run_main_package)"/>   
+</launch>

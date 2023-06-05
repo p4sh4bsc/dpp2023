@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="main_package" type="main.py" name="main"/>
+  <node pkg="main_package" type="radio.py" name="radio"/>
+</launch>
