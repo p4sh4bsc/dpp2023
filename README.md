@@ -2,11 +2,11 @@
 
 Структура для проекта
 
-mkdir /catkin_ws/src/main_package
-mkdir /catkin_ws/src/main_package/include
-mkdir /catkin_ws/src/main_package/launch
-mkdir /catkin_ws/src/main_package/src
-mkdir /catkin_ws/src/main_package/srv
+* mkdir /catkin_ws/src/main_package
+* mkdir /catkin_ws/src/main_package/include
+* mkdir /catkin_ws/src/main_package/launch
+* mkdir /catkin_ws/src/main_package/src
+* mkdir /catkin_ws/src/main_package/srv
 
 nano /catkin_ws/src/main_package/CMakeLists.txt
 nano /catkin_ws/src/main_package/package.xml
