@@ -29,3 +29,11 @@
 <h5> export ROS_MASTER_URI=http://localhost:11311 </h5>
 <h5> export ROVER_MODEL=brover </h5>
 <h5> export ROVER_WHEEL_PARAM=12280 </h5>
+
+После настройки ровера требуется запустить файлы read_file.py (для получения фото с ровера) и send_from_pot.py (для управления ровером)
+При запуске ровера запускаются скрипты из файла main.launch (main.py и radio.py)
+
+Ровер готов к работе!
+
+За подробностями обращайтесь ко мне в тг @llIlIIlllIIl
+(+7 977 425 12 79)
