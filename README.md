@@ -14,8 +14,8 @@
 * nano /catkin_ws/src/main_package/launch/main.launch
 * nano mkdir /catkin_ws/src/main_package/srv/GetCommands.srv
 
-* Прописать запуск rosserial_arduino в /etc/ros/turtlebro.d/turtlebro.launch 
-* Прописать запуск main.launch в /etc/ros/turtlebro.d/turtlebro.launch 
+<h5> Прописать запуск rosserial_arduino в /etc/ros/turtlebro.d/turtlebro.launch </h5>
+<h5> Прописать запуск main.launch в /etc/ros/turtlebro.d/turtlebro.launch </h5>
 
 
 
